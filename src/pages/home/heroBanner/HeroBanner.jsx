@@ -37,7 +37,7 @@ export const HeroBanner = () => {
         <div className="heroBannerContent">
           <span className="title">Welcome.</span>
           <span className="subTitle">
-            MIllion of movies, TV shows and people to discover. Explore now.
+            Million of movies, TV shows and people to discover. Explore now.
           </span>
           <div className="searchInput">
             <input
