@@ -7,5 +7,4 @@ const Img = ({ src, className }) => {
     <LazyLoadImage className={className || ""} alt="" effect="blur" src={src} />
   );
 };
-
 export default Img;
