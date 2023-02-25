@@ -1,10 +1,11 @@
 @import "../../../mixins.scss";
 .castSection {
   position: relative;
+  margin-top: 80px;
   margin-bottom: 50px;
   .sectionHeading {
     font-size: 24px;
-    color: white;
+    color: black;
     margin-bottom: 25px;
   }
   .listItems {
@@ -72,7 +73,6 @@
       margin: 0;
       padding: 0;
     }
-    
     .skItem {
       .circle {
         width: 125px;
@@ -85,14 +85,12 @@
           margin-bottom: 25px;
         }
       }
-
       .row {
         width: 100%;
         height: 20px;
         border-radius: 10px;
         margin-bottom: 10px;
       }
-
       .row2 {
         width: 75%;
         height: 20px;
