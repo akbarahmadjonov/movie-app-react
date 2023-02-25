@@ -18,6 +18,7 @@ export const Carousel = ({ data, loading, endpoint }) => {
   const carouselContainer = useRef();
   const navigate = useNavigate();
   const { url } = useSelector((state) => state.home);
+  // Add url
 
   const navigation = (dir) => {
     const container = carouselContainer.current;
