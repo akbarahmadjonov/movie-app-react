@@ -18,5 +18,4 @@ const CircleRating = ({ rating }) => {
     </div>
   );
 };
-
 export default CircleRating;

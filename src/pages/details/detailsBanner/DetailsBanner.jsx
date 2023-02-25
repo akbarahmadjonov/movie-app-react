@@ -12,17 +12,14 @@ import CircleRating from "../../../components/circleRating/CircleRating";
 import Img from "../../../components/lazyLoadImg/img";
 import PosterFallback from "../../../assets/no-poster.png";
 import { PlayIcon } from "./Playbtn";
-// import VideoPopup from "../../../components/videoPopup/VideoPopup";
+import { VideoPopup } from "../../../components/videoPopup/VideoPopup";
 
 export const DetailsBanner = ({ video, crew }) => {
   const [show, setShow] = useState(false);
   const [videoId, setVideoId] = useState(null);
 
   const { mediaType, id } = useParams();
-  const { data, loading } = useFetch(`/${mediaType}/${id}/videos`);
-  const { data: credits, loading: creditsLoading } = useFetch(
-    `/${mediaType}/${id}/credits`
-  );
+  const { data, loading } = useFetch(`/${mediaType}/${id}`);
 
   const { url } = useSelector((state) => state.home);
 
@@ -158,12 +155,12 @@ export const DetailsBanner = ({ video, crew }) => {
                     )}
                   </div>
                 </div>
-                {/* <VideoPopup
+                <VideoPopup
                   show={show}
                   setShow={setShow}
                   videoId={videoId}
                   setVideoId={setVideoId}
-                /> */}
+                />
               </ContentWrapper>
             </React.Fragment>
           )}
